@@ -15,7 +15,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class BookServiceTest {
 	
 	@Mock
-    private BookRepository bookRepository;
+    private InMemoryBookRepository bookRepository;
 	
 	@InjectMocks
     private BookService bookService;
@@ -23,7 +23,7 @@ public class BookServiceTest {
 	@Test
     void whenBookToCreateAlreadyExistsThenThrows() {
 		var bookIsbn = "1234561232";
-		var bookToCreate = new Book(bookIsbn, "Title", "Author", 9.90);
+		var bookToCreate = Book.of(bookIsbn, "Title", "Author", 9.90, "Polarsophia");
 		when(bookRepository.existsByIsbn(bookIsbn)).thenReturn(true);
 		
 		assertThatThrownBy(() -> bookService.addBookToCatalog(bookToCreate))
