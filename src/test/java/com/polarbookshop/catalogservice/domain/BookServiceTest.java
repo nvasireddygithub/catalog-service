@@ -15,7 +15,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class BookServiceTest {
 	
 	@Mock
-    private InMemoryBookRepository bookRepository;
+    private BookRepository bookRepository;
 	
 	@InjectMocks
     private BookService bookService;
