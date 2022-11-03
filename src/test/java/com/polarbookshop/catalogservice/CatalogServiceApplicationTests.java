@@ -11,7 +11,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 
 import com.polarbookshop.catalogservice.domain.Book;
 
-@Disabled
+//@Disabled
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("integration")
 class CatalogServiceApplicationTests {
