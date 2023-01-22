@@ -59,6 +59,8 @@ public class BookJsonTests {
                     "publisher": "Polarsophia",
                     "createdDate": "2022-10-26T20:50:37.135029Z",
                     "lastModifiedDate": "2022-10-26T20:50:37.135029Z",
+                    "createdBy": "jenny",
+                    "lastModifiedBy": "eline",
                     "version": 21
                 }
                 """;
