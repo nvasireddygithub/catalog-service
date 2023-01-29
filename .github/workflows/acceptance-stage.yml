@@ -8,7 +8,7 @@ concurrency: acceptance
 
 env:
   OWNER: naveendocker007
-  REGISTRY: ghcr.io
+  REGISTRY: docker.io
   APP_REPO: catalog-service
   DEPLOY_REPO: polar-deployment
   VERSION: ${{ github.sha }}
